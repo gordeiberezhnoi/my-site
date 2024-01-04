@@ -19,22 +19,32 @@
         <div class="container">
             <nav class="title">
                 <img class="title__logo" src="img/logo.svg" alt="Chosby">
-                <h1 class="title__text"> – выбери своё хобби</h1>
+                <h1 class="title__text"> <span>Chosby</span> – выбери своё хобби</h1>
                 <ul class="title__buttons">
                     <li><a class="title__buttons-menu">О нас</a></li>
                     <li><a class="title__buttons-menu">Хобби</a></li>
+                    <li><a class="title__buttons-menu">Обратная связь</a></li>
                     <li><a class="title__buttons-menu">Подобрать хобби</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main class="main-page">
-        <div class="main-page__container">
-            <div class="main-page__container-pic">
-                <img class="main" src="img/main_img.jpg" alt="main_img">
-            </div>
+
+    <hr>
+
+    <main class="main">
+        <div class="main-container">
+            <!-- <img class="main-container__pic" src="img/main_img.jpg" alt="main_img"> -->
+            <h1 class="main-container__text-h1">Чем хотите заняться?</h1>
+            <h4 class="main-container__text-h4">Найдём для вас всё</h4>
+            <form class="search" action="/search" method="get">
+                <label class="search__text" for="search-input"><input type="text" id="search-input" name="q" placeholder="Введите запрос">Поиск</label>
+                
+                <button class="search__button" type="submit">Поиск</button>
+            </form>
         </div>
     </main>
+    
     <footer class="footer">
 
     </footer>
