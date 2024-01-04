@@ -159,8 +159,8 @@ hr {
     margin: 0;
 }
 
-.main-container__text-h4{
-    color: rgba(236, 236, 236, 1);
+.main-container__text-h2{
+    color: #FFF;
     font-size: 25px;
     font-style: normal;
     font-weight: 700;
@@ -181,6 +181,7 @@ hr {
     justify-content: space-between;
     align-items: center;
     padding: 0 13px 0 27px;
+    margin-bottom: 41px;
 }
 .search__text {
     color: #C0C0C0;
@@ -188,7 +189,12 @@ hr {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    background: none;
 }
+
 .search__button {
     display: inline-flex;
     height: 52px;
@@ -205,10 +211,23 @@ hr {
     font-weight: 400;
     line-height: normal;
     border: none;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 .search__button:hover {
     transform: scale(1.05);
+}
+
+.main-container__text-h3 {
+    display: flex;
+    color: #FFF;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: relative;
+    left: -25%;
 }
 
 .footer {
