@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>chosby</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="chosby – сайт, который поможет вам найти хобби и увлечение">
+    <meta name="keywords" content="хобби, увлечение, увлечения, интерес, творчество, спорт">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="hortcut icon" href="C:\Users\Таня\Desktop\my-site-pictures\logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/hobbies.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="title">
+                <a href="index.html" target="_blank"><img class="title__logo" src="../img/logo.svg" alt="Chosby"></a>
+                <a class="title__text" href="index.html" target="_blank"> <span>Chosby</span> – выбери своё хобби</a>
+                <ul class="title__buttons">
+                    <li><a target="_blank" href="about_us.html" class="title__buttons-menu">О нас</a></li>
+                    <li><a class="title__buttons-menu">Хобби</a></li>
+                    <li><a class="title__buttons-menu">Обратная связь</a></li>
+                    <li><a class="title__buttons-menu">Подобрать хобби</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <hr>
+
+    <main class="main">
+        <section class="main-container">
+            <div class="img-block">
+                <div class="functional-block">
+                    <img src="../img/quote.svg" class="functional-block__quote" alt="quote">
+                    <form class="functional-block__search" action="/search" method="get">
+                        <input class="functional-block__search-text" type="text" placeholder="Поиск"></input>
+                        <button class="functional-block__search-button" type="submit">Поиск</button>
+                    </form>
+                    
+                    <div class="functional-block__text">
+                        <p class="functional-block__text-p">На нашем сервисе для вас подобраны более 50 вариантов хобби, от обычных до самых увлекательных. Они подойдут как для активных людей, так и для интроветов.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hobbies-block">
+                <div class="filters"></div>
+                <div class="chosen-filters"></div>
+                <article>Хобби</article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
