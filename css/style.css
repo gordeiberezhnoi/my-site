@@ -1,17 +1,20 @@
 html {
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 *, *::before, *::after {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
 }
 
 :root {
@@ -52,7 +55,7 @@ body {
 }
 
 
-.title__text {
+.title__text h1 {
     color:#000;
     margin-top: 26px;
     margin-bottom: 10px;
@@ -62,8 +65,9 @@ body {
     text-decoration: none;
 }
 
-.title__text span{
-    font-weight: 780
+.title__text h1 span{
+    font-weight: 780;
+    text-decoration: none;
 }
 
 .title__buttons {
