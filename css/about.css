@@ -132,11 +132,10 @@ hr {
 }
 
 
-.main-container {
+.main__container {
     background-color: var(--bg-color);
-    flex-shrink: 0;
-    margin: 0 auto;
     max-width: 1920px;
+    
 }
 
 .img-block {

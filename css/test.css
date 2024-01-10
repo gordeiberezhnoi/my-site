@@ -1,6 +1,4 @@
-@import url(../css/styles.css);
-
-.main__container {
+.main-container {
     max-width: 1920px;
     min-height: 1600px;
 }
@@ -24,7 +22,7 @@
     flex-shrink: 1;
 }
 
-.img-block__quote-geometry {
+.img-block__quote-form {
     margin-top: 24px;
 }
 
@@ -32,7 +30,7 @@
     max-width: 840px;
 }
 
-.main__container-search-geometry {
+.main-container__search-form {
     height: 56px;
     margin-bottom: 30px;
     margin-top: 46px;

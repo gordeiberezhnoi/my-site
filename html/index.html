@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-    <title>chosby</title>
+    <title>Chosby</title>
     <meta charset="UTF-8">
     <meta name="description" content="chosby – сайт, который поможет вам найти хобби и увлечение">
     <meta name="keywords" content="хобби, увлечение, увлечения, интерес, творчество, спорт">
@@ -11,20 +11,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/index.css">
 </head>
 
 <body>
     <header class="header">
-        <section class="container">
-            <nav class="title">
-                <a href="index.html" target="_blank"><img class="title__logo" src="../img/logo.svg" alt="Chosby"></a>
-                <a class="title__text" href="index.html" target="_blank"> <h1><span>Chosby</span> – выбери своё хобби</h1></a>
-                <ul class="title__buttons">
-                    <li><a target="_blank" href="about_us.html" class="title__buttons-menu">О нас</a></li>
-                    <li><a target="_blank" href="hobbies.html" class="title__buttons-menu">Хобби</a></li>
-                    <li><a class="title__buttons-menu">Обратная связь</a></li>
-                    <li><a class="title__buttons-menu">Подобрать хобби</a></li>
+        <section class="container header__container">
+            <div class="logo">
+                <a href="index.html" target="_blank"><img class="logo__img" src="../img/logo.svg" alt="Логотип Chosby"></a>
+                <h1 class="logo__text" aria-label="Главная страница сервиса Chosby">
+                    <a href="index.html" target="_blank" aria-label=""><span class="logo__text logo__text--bold">Chosby</span> – выбери своё хобби</a>
+                </h1>
+            </div>
+
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li><a target="_blank" href="about_us.html" class="header__menu-btn" aria-label="Информация о сервисе chosby">О нас</a></li>
+                    <li><a target="_blank" href="hobbies.html" class="header__menu-btn" aria-label="Список хобби">Хобби</a></li>
+                    <li><a class="header__menu-btn header__menu-btn--black" aria-label="Форма обратной связи">Обратная связь</a></li>
+                    <li><a class="header__menu-btn header__menu-btn--red" aria-label="Алгоритм, который подберет вам хобби">Подобрать хобби</a></li>
                 </ul>
             </nav>
         </section>
@@ -32,23 +38,56 @@
 
     <hr>
 
-    <main class="main">
-        <section class="main-container">
-            <h1 class="main-container__text-h1">Чем хотите заняться?</h1>
-            <h2 class="main-container__text-h2">Найдём для вас всё</h2>
-            <form class="search" action="/search" method="get">
-                <input class="search__text" type="text" placeholder="Поиск"></input>
-                <button class="search__button" type="submit">Поиск</button>
-            </form>
-            <h3 class="main-container__text-h3">Самые популярные</h3>
-            
-            <article class="article"></article>
-            <article class="article"></article>
-            <article class="article"></article>
-        </section>
+    <main class="main main-geometry">
+        <section class="welcome">
+            <div class="container welcome__container">
+                <h2 class="welcome__question">Чем хотите заняться?</h2>
+                <h3 class="welcome__find">Найдём для вас всё</h3>
+                <form class="search search-geometry" action="/search" method="get">
+                    <input class="search__text" type="text" placeholder="Поиск"></input>
+                    <button class="search__button" type="submit">Поиск</button>
+                </form>
+                <h3 class="welcome__popular-hobbies">Самые популярные</h3>
 
+
+                <div class="grid">
+                    <article class="article">
+                        <div class="article__picture article__picture--tvor">
+                            <a href="https://ru.freepik.com/free-photo/creative-artist-drawing-on-canvas-working-at-sketch-shadow-using-graphic-pencil-during-art-lesson-in-creative-home-atelier-artistic-studio-with-progessional-draw-tools-concept-of-painting-lesson_23942033.htm#query=%D1%82%D0%B2%D0%BE%D1%80%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE&position=40&from_view=search&track=sph&uuid=c6e5cdad-281d-4393-a5bf-e2c7dd43e401" class="article__picture-link" target="_blank">Изображение от DCStudio на Freepik</a> 
+                        </div>
+                        <div class="article__text">
+                            <h4 class="article__text-h4">Творчество</h4>
+                            <p class="article__text-p">Творчество - это процесс выражения уникальных идей, чувств и вдохновения через искусство, дизайн и другие творческие выражения.</p>
+                            <p class="article__text-p">Оно позволяет людям раскрыть свой внутренний мир, делиться мыслями и чувствами, а также внести вклад в культурное разнообразие общества и вдохновить окружающих. Практика творчества важна для развития личности и раскрытия потенциала.</p>
+                        </div>
+                    </article>
+
+                    <article class="article">
+                        <div class="article__picture article__picture--pic">
+                            <a href="https://ru.freepik.com/free-photo/creative-artist-drawing-on-canvas-working-at-sketch-shadow-using-graphic-pencil-during-art-lesson-in-creative-home-atelier-artistic-studio-with-progessional-draw-tools-concept-of-painting-lesson_23942033.htm#query=%D1%82%D0%B2%D0%BE%D1%80%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE&position=40&from_view=search&track=sph&uuid=c6e5cdad-281d-4393-a5bf-e2c7dd43e401" class="article__picture-link" target="_blank">Изображение от DCStudio на Freepik</a> 
+                        </div>
+                        <div class="article__text">
+                            <h4 class="article__text-h4">Творчество</h4>
+                            <p class="article__text-p">Творчество - это процесс выражения уникальных идей, чувств и вдохновения через искусство, дизайн и другие творческие выражения.</p>
+                            <p class="article__text-p">Оно позволяет людям раскрыть свой внутренний мир, делиться мыслями и чувствами, а также внести вклад в культурное разнообразие общества и вдохновить окружающих. Практика творчества важна для развития личности и раскрытия потенциала.</p>
+                        </div>
+                    </article>
+
+                    <article class="article">
+                        <div class="article__picture article__picture--pic">
+                            <a href="https://ru.freepik.com/free-photo/creative-artist-drawing-on-canvas-working-at-sketch-shadow-using-graphic-pencil-during-art-lesson-in-creative-home-atelier-artistic-studio-with-progessional-draw-tools-concept-of-painting-lesson_23942033.htm#query=%D1%82%D0%B2%D0%BE%D1%80%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE&position=40&from_view=search&track=sph&uuid=c6e5cdad-281d-4393-a5bf-e2c7dd43e401" class="article__picture-link" target="_blank">Изображение от DCStudio на Freepik</a> 
+                        </div>
+                        <div class="article__text">
+                            <h4 class="article__text-h4">Творчество</h4>
+                            <p class="article__text-p">Творчество - это процесс выражения уникальных идей, чувств и вдохновения через искусство, дизайн и другие творческие выражения.</p>
+                            <p class="article__text-p">Оно позволяет людям раскрыть свой внутренний мир, делиться мыслями и чувствами, а также внести вклад в культурное разнообразие общества и вдохновить окружающих. Практика творчества важна для развития личности и раскрытия потенциала.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
     </main>
-    
+
     <footer class="footer">
 
     </footer>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <title>О нас</title>
+    <title>chosby</title>
     <meta charset="UTF-8">
     <meta name="description" content="chosby – сайт, который поможет вам найти хобби и увлечение">
     <meta name="keywords" content="хобби, увлечение, увлечения, интерес, творчество, спорт">
@@ -10,9 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/test.css">
 </head>
-<body>
+<html>
     <header class="header">
         <section class="container header__container">
             <div class="logo">
@@ -23,7 +24,7 @@
             </div>
 
             <nav class="header__nav">
-                <ul class="header__menu">
+                <ul class="header__menu-list">
                     <li><a target="_blank" href="about_us.html" class="header__menu-btn" aria-label="Информация о сервисе chosby">О нас</a></li>
                     <li><a target="_blank" href="hobbies.html" class="header__menu-btn" aria-label="Список хобби">Хобби</a></li>
                     <li><a class="header__menu-btn header__menu-btn--black" aria-label="Форма обратной связи">Обратная связь</a></li>
@@ -36,27 +37,29 @@
     <hr>
 
     <main class="main">
-        <section class="container main__container">
+        <section class="container main-container">
             <div class="img-block">
-                <h1 class="img-block__h1">Chosby – севрис, который поможет тебе выбрать увлечение, а, возможно, и будущее</h1>
-            </div>
+                <div class="img-block__filling">
+                    <img src="../img/quote.svg" class="quote img-block__quote-form" alt="Цитита Генри Форда с текстом: Самая лучшая работа – это высокооплачиваемое хобби">
 
-            <div class="img-block-woman">
-                <img class="img-block-woman__pic" src="../img/about_us_woman.jpg" alt="woman"></img>
-                <div class="text">
-                    <h1 class="text__h1">О Chosby</h1>
-                    <p class="text__p">Привет!</p>
-                    <p class="text__p">Этот сайт был создан для тех, кто хочет себя попробовать в чём-то новом, необычном или же просто найти любимое занятие и завести новых друзей :) </p>
-                    <p class="text__p">Тут представлены более 50 вариантов хобби с описанием и рекомендациями для тех, кому это может подойти. Также на сайте есть специальный алгоритм, который подберёт вам хобби</p>
+                    <div class="search-and-info">
+                        <form class="search main-container__search-form" action="/search" method="get">
+                            <input class="search__text search__text--smaller" type="text" placeholder="Поиск" aria-label="Нужно ввести запрос"></input>
+                            <button class="search__button search__button--smaller" type="submit">Поиск</button>
+                        </form>
+                        <div class="search-and-info-text-block">
+                            <p class="search-and-info__text">На нашем сервисе для вас подобраны более 50 вариантов хобби, от обычных до самых увлекательных. Они подойдут как для активных людей, так и для интроветов.</p>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            
+            <div class="hobbies-block">
+                <div class="filters"></div>
+                <div class="chosen-filters"></div>
+                <article>Хобби</article>
             </div>
         </section>
     </main>
-
-    <footer class="footer">
-
-    </footer>
-
-    <script src="../js/script.js"></script>
 </body>
-</html>
+</html> 

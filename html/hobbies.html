@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>chosby</title>
+    <title>Хобби</title>
     <meta charset="UTF-8">
     <meta name="description" content="chosby – сайт, который поможет вам найти хобби и увлечение">
     <meta name="keywords" content="хобби, увлечение, увлечения, интерес, творчество, спорт">
@@ -10,43 +10,51 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/hobbies.css">
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <nav class="title">
-                <a href="index.html" target="_blank"><img class="title__logo" src="../img/logo.svg" alt="Chosby"></a>
-                <a class="title__text" href="index.html" target="_blank"> <span>Chosby</span> – выбери своё хобби</a>
-                <ul class="title__buttons">
-                    <li><a target="_blank" href="about_us.html" class="title__buttons-menu">О нас</a></li>
-                    <li><a class="title__buttons-menu">Хобби</a></li>
-                    <li><a class="title__buttons-menu">Обратная связь</a></li>
-                    <li><a class="title__buttons-menu">Подобрать хобби</a></li>
+        <section class="container header__container">
+            <div class="logo">
+                <a href="index.html" target="_blank"><img class="logo__img" src="../img/logo.svg" alt="Логотип Chosby"></a>
+                <h1 class="logo__text" aria-label="Главная страница сервиса Chosby">
+                    <a href="index.html" target="_blank" aria-label=""><span class="logo__text logo__text--bold">Chosby</span> – выбери своё хобби</a>
+                </h1>
+            </div>
+
+            <nav class="header__menu">
+                <ul class="header__menu">
+                    <li><a target="_blank" href="about_us.html" class="header__menu-btn" aria-label="Информация о сервисе chosby">О нас</a></li>
+                    <li><a target="_blank" href="hobbies.html" class="header__menu-btn" aria-label="Список хобби">Хобби</a></li>
+                    <li><a class="header__menu-btn header__menu-btn--black" aria-label="Форма обратной связи">Обратная связь</a></li>
+                    <li><a class="header__menu-btn header__menu-btn--red" aria-label="Алгоритм, который подберет вам хобби">Подобрать хобби</a></li>
                 </ul>
             </nav>
-        </div>
+        </section>
     </header>
 
     <hr>
 
     <main class="main">
-        <section class="main-container">
+        <section class="container main__container-geometry">
             <div class="img-block">
-                <div class="functional-block">
-                    <img src="../img/quote.svg" class="functional-block__quote" alt="quote">
-                    <form class="functional-block__search" action="/search" method="get">
-                        <input class="functional-block__search-text" type="text" placeholder="Поиск"></input>
-                        <button class="functional-block__search-button" type="submit">Поиск</button>
-                    </form>
-                    
-                    <div class="functional-block__text">
-                        <p class="functional-block__text-p">На нашем сервисе для вас подобраны более 50 вариантов хобби, от обычных до самых увлекательных. Они подойдут как для активных людей, так и для интроветов.</p>
+                <div class="img-block__filling">
+                    <img src="../img/quote.svg" class="quote img-block__quote-geometry" alt="Цитита Генри Форда с текстом: Самая лучшая работа – это высокооплачиваемое хобби">
+
+                    <div class="search-and-info">
+                        <form class="search main__container-search-geometry" action="/search" method="get">
+                            <input class="search__text search__text--smaller" type="text" placeholder="Поиск" aria-label="Нужно ввести запрос"></input>
+                            <button class="search__button search__button--smaller" type="submit">Поиск</button>
+                        </form>
+                        <div class="search-and-info-text-block">
+                            <p class="search-and-info__text">На нашем сервисе для вас подобраны более 50 вариантов хобби, от обычных до самых увлекательных. Они подойдут как для активных людей, так и для интроветов.</p>
+                        </div>
                     </div>
                 </div>
             </div>
             
-            <div class="hobbies-block">
+            <div class="hobbies">
                 <div class="filters"></div>
                 <div class="chosen-filters"></div>
                 <article>Хобби</article>
