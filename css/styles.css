@@ -24,7 +24,8 @@ body * {
 }
 
 .header {
-    min-height: 66px;
+    width: 99.114583vw;
+    min-height: 82px;
     background-color: #fff;
 }
 
@@ -35,7 +36,7 @@ body * {
 
 .header__container {
     background-color: #fff;
-    max-width: 1244px;
+    width: 65.370467%; /* 1244px; */
     display: flex;
     justify-content: space-between;
 }
@@ -43,12 +44,12 @@ body * {
 .logo {
     display: flex;
     flex-shrink: 1;
+    margin-top: 8px;
 }
 
 .logo__img {
     margin-right: 16px;
     margin-bottom: 5px;
-    margin-top: 5px;
 }
 
 .logo__text {
@@ -80,7 +81,7 @@ body * {
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    margin-bottom: 13px;
+    margin-bottom: 10px;
     margin-top: 21px;
 }
 
@@ -107,7 +108,7 @@ body * {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.05s ease-in-out;
     text-decoration: none;
 }
 
@@ -115,15 +116,19 @@ body * {
     transform: scale(1.05);
 }
 
+.header__menu-btn:active {
+    transform: scale(0.98);
+}
+
 .header__menu-btn--black {
-    background-color: rgba(64, 62, 62, 1);
+    background-color: rgba(49, 48, 48, 1);
     width: 184px;
     height: 32px;
     color: #FFF;
 }
 
 .header__menu-btn--red {
-    background-color: #F16060;
+    background-color: rgba(238, 53, 53, 1);
     width: 239px;
     height: 32px;
     color: #FFF;
@@ -140,12 +145,11 @@ hr {
 
 .main {
     background-image: var(--bg-color);
-    min-height: 1600px;
+    width: 99.114583vw;
 }
 
 .search {
     display: flex;
-    max-width: 840px;
     height: 74px;
     flex-shrink: 0;
     border-radius: 36px;
@@ -159,6 +163,8 @@ hr {
 }
 
 .search__text {
+    width: 80%;
+    height: 80%;
     color: #C0C0C0;
     font-size: 26px;
     font-style: normal;
@@ -186,10 +192,39 @@ hr {
     font-weight: 400;
     line-height: normal;
     border: none;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.05s ease-in-out;
     cursor: pointer;
 }
 
 .search__button:hover {
     transform: scale(1.05);
+}
+
+.search__button:active {
+    transform: scale(0.98);
+}
+
+#feedback {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.footer {
+    height: 82px;
+    background-color: rgba(69, 69, 69, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__text {
+    color: #FFF;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }

@@ -27,18 +27,18 @@ body * {
 }
 
 .main-geometry {
-    padding-top: 15px;
+    min-height: 1200px;
+    padding-top: 22px;
 }
 
 .welcome {
     margin: 0 auto;
-    max-width: 1214px;
+    width: 63.229167vw;
     min-height: 1146px;
-    padding: 8px 172px 148px 172px;
+    padding: 10px 172px 148px 172px;
 
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
 
@@ -48,16 +48,13 @@ body * {
 }
 
 .welcome__container {
-    max-width: 840px;
-    min-height: 990px;
+    width: 100%;
+    min-height: 988px;
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
 }
 
 .welcome__question {
-    display: flex;
     color: #FFF;
     font-size: 72px;
     font-style: normal;
@@ -79,81 +76,16 @@ body * {
 }
 
 .search-geometry {
+    width: 100%;
     margin-bottom: 40px;
     position: relative;
 }
 
 .welcome__popular-hobbies {
     color: #FFF;
-    font-size: 26px;
+    font-size: 32px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     margin-bottom: 9px;
-}
-
-.grid {
-    /* min-height: 686px; */
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-}
-
-.article {
-    width: 840px;
-    min-height: 204px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-radius: 15px;
-    background-color: #000;
-    gap: 30px;
-}
-
-.article__picture {
-    width: 256px;
-    border-radius: 15px 0px 0px 15px;
-    display: flex;
-    align-items: flex-end;
-}
-
-.article__picture--tvor {
-    background-image: url(../img/tvorchestvo.jpg);
-}
-
-.article__picture-link {
-    padding-bottom: 9px;
-    padding-left: 8px;
-    color: #FFF;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    text-decoration-line: underline;
-}
-
-.article__text {
-    padding: 13px 53px 27px 0;
-}
-
-.article__text-h4 {
-    margin-bottom: 6px;
-    color: #000;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
-.article__text-p {
-    width: 512px;
-    text-indent: 20px;
-    color: var(--acle-color);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
-
-.footer {
-    margin: s;
 }

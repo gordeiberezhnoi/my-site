@@ -1,0 +1,113 @@
+<form class="feedback">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <header class="header">
+        <section class="container header__container header--rounded">
+            <div class="logo">
+                <img class="logo__img" src="../img/logo.svg"></img>
+                <h1 class="logo__text">Chosby</h1>
+                <img src="../img/close.svg" alt="крестик – закрыть">
+            </div>
+            <img src="../img/close.svg" alt="крестик – закрыть">
+            <h2 class="header__h2">
+                Помогите нам стать лучше :)
+            </h2>
+        </section>
+    </header>
+    <main class="main">
+        <section class="container main__container">
+            <div action="" class="questions">
+                
+            </div>
+        </section>
+    </main>
+    <main class="main"></main>
+</form>
+<style>
+    .feedback {
+        margin: 0 auto;
+        max-width: 322px;
+        height: 392px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        border: 2px solid #898989;
+        background: #FFF;
+        box-shadow: 2px 4px 7.2px 0px rgba(0, 0, 0, 0.20);
+    }
+
+    .container {
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    .header {
+        margin: 0 auto;
+        width: 318px;
+        height: 100px;
+        flex-shrink: 0;
+        border-radius: 17.7px 17.7px 0px 0px;
+        background-color: #545454 /*#60ABF1; */
+    }
+
+    .header__container {
+        border-radius: inherit;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        width: 288px;
+        display: flex;
+        /* flex-direction: row;
+        justify-content: space-between; */
+        margin-top: 8px;
+        margin-bottom: 9px;
+    }
+
+    .logo__text { 
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .header__h2 {
+        display: inline;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 18.8px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    div, form, section, h1, h2, h3, h4, h5, h6, label, input, textarea {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+    }
+
+    *, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+</style>
+
+<!-- <h3>Оставьте свой отзыв</h3>
+<form>
+  <label for="name">Имя:</label>
+  <input type="text" id="name" name="name"><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br>
+  <label for="message">Сообщение:</label><br>
+  <textarea id="message" name="message"></textarea><br>
+  <button type="submit">Отправить</button>
+</form> -->
