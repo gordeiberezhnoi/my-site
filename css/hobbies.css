@@ -1,5 +1,10 @@
 @import url(../css/styles.css);
 
+.main-geometry {
+    min-height: 1200px;
+    padding: 0;
+}
+
 .main__container {
     max-width: 1920px;
     min-height: 1600px;
@@ -32,7 +37,7 @@
     max-width: 840px;
 }
 
-.main__container-search-geometry {
+.search-geometry {
     height: 56px;
     margin-bottom: 30px;
     margin-top: 46px;
@@ -66,14 +71,53 @@
     line-height: normal;
 }
 
-.hobbies-block {
-
+.hobbies {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .filters {
-
+    width: 300px;
+    height: 315px;
+    background-color: #FFF;
 }
 
-.chosen-filters {
+.filters__p {
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
 
+.filters__block {
+    display: flex;
+    padding: 19px 27px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.filters__filter {
+    display: flex;
+    height: 19px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.filters__filter-text {
+    color: #171717;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+}
+
+.selected-filters {
+    
 }

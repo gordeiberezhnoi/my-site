@@ -1,3 +1,8 @@
+:root {
+    --bg-color: linear-gradient(284deg, #E9FCFF 10.28%, rgba(217, 246, 253, 0.88) 27.56%, rgba(236, 252, 255, 0.77) 41.19%, rgba(194, 236, 239, 0.54) 65.66%, rgba(71, 243, 254, 0.18) 87.63%, rgba(0, 240, 255, 0.00) 100.3%);
+    --acle-color: rgba(39, 39, 39, 1);
+}
+
 .grid {
     min-height: 686px;
     display: grid;

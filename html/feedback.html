@@ -1,73 +1,84 @@
-<form class="feedback">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <header class="header">
-        <section class="container header__container header--rounded">
-            <div class="logo">
-                <img class="logo__img" src="../img/logo.svg"></img>
-                <h1 class="logo__text">Chosby</h1>
-                <img src="../img/close.svg" alt="крестик – закрыть">
-            </div>
-            <img src="../img/close.svg" alt="крестик – закрыть">
-            <h2 class="header__h2">
-                Помогите нам стать лучше :)
-            </h2>
-        </section>
-    </header>
-    <main class="main">
-        <section class="container main__container">
-            <div action="" class="questions">
-                
-            </div>
-        </section>
-    </main>
-    <main class="main"></main>
-</form>
-<style>
-    .feedback {
-        margin: 0 auto;
-        max-width: 322px;
-        height: 392px;
-        display: flex;
-        flex-direction: column;
-        border-radius: 20px;
-        border: 2px solid #898989;
-        background: #FFF;
-        box-shadow: 2px 4px 7.2px 0px rgba(0, 0, 0, 0.20);
-    }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<section class="container header__container">
+    <div class="logo">
+        <img class="logo__img" src="../img/logo.svg"></img>
+        <h1 class="logo__h1">Chosby</h1>
+        <img src="../img/close.svg" alt="крестик – закрыть">
+    </div>
+    <h2 class="header__h2">Мы вам обязательно ответим</h2>
+</section>
+<form action="/search" method="get" class="form">
+    <label class="form__question" for="name">
+        <span  class="form__question-text">Ваше имя:</span>
+        <input type="text" id="name" name="name">
+    </label>
+    <label class="form__question" for="e-mail">
+        <span  class="form__question-text">Ваш e-mail:</span>
+        <input type="text" id="e-mail" name="e-mail">
+    </label>
+    <label class="form__question form__question--reduced" for="review">
+        <span  class="form__question-text">Как вам наш сервис?</span>
+        <input type="text" id="review" name="review">
+    </label>
+    <button class="form__button" type="submit">Отправить</button>
 
+</form>
+
+
+<style>
     .container {
         margin: 0 auto;
         padding: 0 15px;
     }
 
-    .header {
-        margin: 0 auto;
+    .header__container {
         width: 318px;
         height: 100px;
         flex-shrink: 0;
         border-radius: 17.7px 17.7px 0px 0px;
-        background-color: #545454 /*#60ABF1; */
-    }
-
-    .header__container {
+        background-color: #545454;/*#60ABF1; */
         border-radius: inherit;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        margin-bottom: 29px;
     }
 
     .logo {
         width: 288px;
         display: flex;
-        /* flex-direction: row;
-        justify-content: space-between; */
+        align-items: flex-end;
         margin-top: 8px;
         margin-bottom: 9px;
+        position: relative;
     }
 
-    .logo__text { 
+    .logo img:first-of-type {
+        margin-right: 7px;
+    }
+
+    .logo img:last-of-type {
+        position: absolute;
+        left: 89.7%;
+        bottom: 45%;
+        filter: drop-shadow(1px 3px 10px rgba(0, 0, 0, 0.44));
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+    }
+
+    .logo img:last-of-type:hover {
+        transform: scale(1.1);
+    }
+
+    .logo img:last-of-type:active {
+        transform: scale(0.97);
+    }
+
+    .logo__h1 { 
+        height: 30px;
         color: #FFF;
         font-family: Montserrat;
         font-size: 25px;
@@ -80,10 +91,88 @@
         display: inline;
         color: #FFF;
         font-family: Montserrat;
-        font-size: 18.8px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+    }
+
+    .form {
+        margin: 0 auto;
+        width: 318px;
+        background-color: #FFF;
+        display: grid;
+        justify-content: center;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 24px;
+    }
+
+    .form__question {
+        width: 266px; 
+        height: 37px; 
+        flex-shrink: 0; 
+        border-radius: 12px; 
+        border: 2px solid #9C9C9C; 
+        background: #F8F8F8; 
+        display: flex; 
+        align-items: flex-end; 
+        justify-content: flex-start;
+        padding-bottom: 5px;
+    }
+
+    .form__question-text {
+        margin-left: 8px;
+        color: rgba(49, 49, 49, 1);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.56px;
+    }
+
+    label input {
+        border: none;
+        width: 160px;
+        color: rgba(35, 35, 35, 1);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        outline: none;
+        margin-left: 8px;
+    }
+
+    .form__question--reduced input:last-of-type {
+        width: 95px;
+    }
+
+    .form__button {
+        display: flex;
+        width: 270px;
+        padding: 9px 62px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 12px;
+        background: #EE3535;
+        border: none;
+        color: #FFF;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        transition: all 0.02s ease-in-out;
+        cursor: pointer;
+        box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.44);
+        letter-spacing: 0.9px;
+    }
+
+    .form__button:hover {
+        transform: scale(1.02);
+    }
+
+    .form__button:active {
+        transform: scale(0.97);
     }
 
     div, form, section, h1, h2, h3, h4, h5, h6, label, input, textarea {
@@ -100,14 +189,3 @@
     padding: 0;
 }
 </style>
-
-<!-- <h3>Оставьте свой отзыв</h3>
-<form>
-  <label for="name">Имя:</label>
-  <input type="text" id="name" name="name"><br>
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email"><br>
-  <label for="message">Сообщение:</label><br>
-  <textarea id="message" name="message"></textarea><br>
-  <button type="submit">Отправить</button>
-</form> -->

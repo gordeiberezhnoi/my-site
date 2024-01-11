@@ -120,16 +120,16 @@ body * {
     transform: scale(0.98);
 }
 
-.header__menu-btn--black {
+/* .header__menu-btn--black {
     background-color: rgba(49, 48, 48, 1);
     width: 184px;
     height: 32px;
     color: #FFF;
-}
+} */
 
 .header__menu-btn--red {
     background-color: rgba(238, 53, 53, 1);
-    width: 239px;
+    width: 220px;
     height: 32px;
     color: #FFF;
     font-size: 20px;
@@ -165,10 +165,10 @@ hr {
 .search__text {
     width: 80%;
     height: 80%;
-    color: #C0C0C0;
+    color: rgba(35, 35, 35, 1);
     font-size: 26px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: normal;
     border: none;
     text-decoration: none;
@@ -204,13 +204,17 @@ hr {
     transform: scale(0.98);
 }
 
-#feedback {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ccc;
+.feedback {
+    margin: 0 auto;
+    max-width: 322px;
+    height: 392px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    border: 2px solid #898989;
+    background: #FFF;
+    box-shadow: 2px 4px 7.2px 0px rgba(0, 0, 0, 0.20);
 }
 
 .footer {
