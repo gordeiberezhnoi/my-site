@@ -41,18 +41,6 @@
     justify-content: center;
 }
 
-.article__picture--creative {
-    background-image: url(../img/creative.jpg);
-}
-
-.article__picture--mart-arts {
-    background-image: url(../img/martial_arts.jpg);
-}
-
-.article__picture--books {
-    background-image: url(../img/books.jpg);
-}
-
 .article__picture-link {
     padding-bottom: 9px;
     padding-left: 8px;
@@ -87,4 +75,100 @@
     font-weight: 600;
     line-height: normal;
     text-align: justify;
+}
+
+.article__picture--creative {
+    background-image: url(../img/creative.jpg);
+}
+
+.article__picture--mart-arts {
+    background-image: url(../img/martial_arts.jpg);
+}
+
+.article__picture--books {
+    background-image: url(../img/books.jpg);
+}
+
+.article__picture--bodybuilding {
+    background-image: url(../img/bodybuilding.jpg);
+}
+
+.article__picture--active-leisure {
+    background-image: url(../img/active_leisure.jpg);
+}
+
+.article__picture--exploring {
+    background-image: url(../img/exploring.jpg);
+}
+
+.article__picture--bodybuilding {
+    background-image: url(../img/bodybuilding.jpg);
+}
+
+.article__picture--bodybuilding {
+    background-image: url(../img/bodybuilding.jpg);
+}
+
+.article__picture--bodybuilding {
+    background-image: url(../img/bodybuilding.jpg);
+}
+
+.article__picture--bodybuilding {
+    background-image: url(../img/bodybuilding.jpg);
+}
+
+.article__picture--bodybuilding {
+    background-image: url(../img/bodybuilding.jpg);
+}
+
+.article__picture--bodybuilding {
+    background-image: url(../img/bodybuilding.jpg);
+}
+
+.article__picture--bodybuilding {
+    background-image: url(../img/bodybuilding.jpg);
+}
+
+.article__picture--bodybuilding {
+    background-image: url(../img/bodybuilding.jpg);
+}
+
+.article__picture--bodybuilding {
+    background-image: url(../img/bodybuilding.jpg);
+}
+
+.article__picture--bodybuilding {
+    background-image: url(../img/bodybuilding.jpg);
+}
+
+.article__picture--bodybuilding {
+    background-image: url(../img/bodybuilding.jpg);
+}
+
+.article__picture--bodybuilding {
+    background-image: url(../img/bodybuilding.jpg);
+}
+
+.article__picture--bodybuilding {
+    background-image: url(../img/bodybuilding.jpg);
+}
+
+.article__picture--bodybuilding {
+    background-image: url(../img/bodybuilding.jpg);
+}
+
+.article__picture--bodybuilding {
+    background-image: url(../img/bodybuilding.jpg);
+}
+
+.article__picture--bodybuilding {
+    background-image: url(../img/bodybuilding.jpg);
+}
+
+.article__picture--bodybuilding {
+    background-image: url(../img/bodybuilding.jpg);
+}
+
+.article__picture--bodybuilding {
+    background-image: url(../img/bodybuilding.jpg);
 }

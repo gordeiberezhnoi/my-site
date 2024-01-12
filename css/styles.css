@@ -148,7 +148,7 @@ hr {
     width: 99.114583vw;
 }
 
-.search {
+/* .search {
     display: flex;
     height: 74px;
     flex-shrink: 0;
@@ -202,7 +202,7 @@ hr {
 
 .search__button:active {
     transform: scale(0.98);
-}
+} */
 
 .feedback {
     margin: 0 auto;

@@ -34,7 +34,7 @@ body * {
 .welcome {
     margin: 0 auto;
     width: 63.229167vw;
-    min-height: 1146px;
+    height: 1146px;
     padding: 10px 172px 148px 172px;
 
     display: flex;
@@ -49,7 +49,7 @@ body * {
 
 .welcome__container {
     width: 100%;
-    min-height: 988px;
+    min-height: 1100px;
     display: flex;
     flex-direction: column;
 }
