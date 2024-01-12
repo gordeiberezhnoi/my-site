@@ -1,77 +1,90 @@
-.main-container {
-    max-width: 1920px;
-    min-height: 1600px;
+@import url(../css/styles.css);
+
+html {
+    box-sizing: border-box;
 }
 
-.img-block {
-    background-image: url(../img/hobbies.jpg);
-    max-width: 1920px;
-    height: 330px;
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+:root {
+    --bg-color: linear-gradient(284deg, #E9FCFF 10.28%, rgba(217, 246, 253, 0.88) 27.56%, rgba(236, 252, 255, 0.77) 41.19%, rgba(194, 236, 239, 0.54) 65.66%, rgba(71, 243, 254, 0.18) 87.63%, rgba(0, 240, 255, 0.00) 100.3%);
+    --acle-color: rgba(39, 39, 39, 1);
+}
+
+.main-geometry {
+    padding-top: 22px;
+    min-height: 1200px;
+    padding-bottom: 60px;
+    padding: 22px 15px 60px 15px;
+    margin: 0 auto;
+}
+
+.welcome {
+    margin: inherit;
+    max-width: 1214px;
+    min-height: 1146px;
+    padding: 10px 0 75px 0;
+
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: rgba(224, 136, 2, 1);
+    background-image: url(../img/main_img.jpg);
+    border-radius: 30px 30px 30px 30px;
 }
-.img-block__filling {
+
+.main__container {
+    flex-direction: column;
     display: flex;
-    width: 1214px;
-    justify-content: space-between;
-}
-
-.quote {
-    width: 300px;
-    height: 356px;
-    flex-shrink: 1;
-}
-
-.img-block__quote-form {
-    margin-top: 24px;
-}
-
-.search-and-info {
-    max-width: 840px;
-}
-
-.main-container__search-form {
-    height: 56px;
-    margin-bottom: 30px;
-    margin-top: 46px;
-}
-
-.search__text--smaller {
-    font-size: 20px;
-}
-
-.search__button--smaller {
-    height: 42px;
-    font-size: 18px;
-}
-
-.search-and-info-text-block {
-    display: flex;
-    flex-shrink: 0;
-    border-radius: 12px;
-    background: #FFF;
-    padding: 50px 87px;
-    justify-content: center;
     align-items: center;
 }
 
-.search-and-info__text {
-    display: inline-block;
-    text-align: center;
-    font-size: 20px;
+.welcome__question {
+    position: relative;
+    color: #FFF;
+    font-size: 70px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: normal;
+    position: relative;
+    text-align: center;
 }
 
-.hobbies-block {
-
+.welcome__find {
+    color: #FFF;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: relative;
+    padding: 0 0 18px 0;
+    text-align: center;
 }
 
-.filters {
-
+.search-geometry {
+    width: 100%;
+    margin-bottom: 40px;
+    position: relative;
 }
 
-.chosen-filters {
-
+.welcome__popular-hobbies {
+    color: #FFF;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 9px;
 }

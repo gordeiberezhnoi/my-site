@@ -33,9 +33,9 @@ body * {
 
 .welcome {
     margin: 0 auto;
-    width: 63.229167vw;
+    max-width: 1244px;
     height: 1146px;
-    padding: 10px 172px 148px 172px;
+    padding: 10px 187px 148px 187px;
 
     display: flex;
     flex-direction: column;
