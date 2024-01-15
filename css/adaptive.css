@@ -3,13 +3,32 @@
     --acle-color: rgba(39, 39, 39, 1);
 }
 
-@media (max-width: 1254px) {
+@media (max-width: 1920px) {
+    /* .main-geometry {
+        text-align: center;
+    } */
+
     .welcome {
-        max-width: 954px;
+        width: 63.229167vw;
+        text-align: center;
     }
 
     .container {
-        max-width: 984px;
+        width: 64.791667vw;
+    }
+}
+
+@media (max-width: 1470px) {
+
+}
+
+/* @media (max-width: 1254px) {
+    .welcome {
+        max-width: 854px;
+    }
+
+    .container {
+        max-width: 884px;
     }
 }
 
@@ -97,7 +116,7 @@
         color: var(--acle-color);
         font-size: 12px;
     } 
-}
+} */
 
 /* @media (max-width: 711px) {
     .container {

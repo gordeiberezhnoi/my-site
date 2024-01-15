@@ -31,15 +31,16 @@ body * {
 }
 
 .welcome {
-    margin: inherit;
-    max-width: 1214px;
+    margin: 0 auto;
+    max-width: 1244px; /*1244px*/
     min-height: 1146px;
-    padding: 10px 0 75px 0;
+    padding: 10px 172px 75px 172px;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    background-size: cover;
 
     background-color: rgba(224, 136, 2, 1);
     background-image: url(../img/main_img.jpg);
@@ -50,12 +51,13 @@ body * {
     flex-direction: column;
     display: flex;
     align-items: center;
+    margin: 0;
 }
 
 .welcome__question {
     position: relative;
     color: #FFF;
-    font-size: 70px;
+    font-size: clamp(50px, 3.59375vw, 70px); /*70px*/
     font-style: normal;
     font-weight: 600;
     line-height: normal;

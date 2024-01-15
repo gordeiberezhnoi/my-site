@@ -26,7 +26,7 @@ body * {
 } */
 
 .container {
-    max-width: 1244px;
+    max-width: 79.625em; /*1244px*/
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -51,7 +51,7 @@ body * {
 
 .main {
     background-image: var(--bg-color);
-    /* max-width: 99.114583vw; 100vw */
+    /* max-width: 79.625em;99.114583vw; 100vw */
     height: 100vh;
     margin: 0 auto;
 }
