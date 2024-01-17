@@ -3,65 +3,62 @@
     --acle-color: rgba(39, 39, 39, 1);
 }
 
-@media (max-width: 1920px) {
+@media (max-width: 1600px) {
     /* .main-geometry {
         text-align: center;
     } */
-
-    .welcome {
-        /* width: 63.229167vw; */
-        text-align: center;
-        padding-right: 9vw;
-        padding-left: 9vw;
-    }
-
-    .container {
-        /* width: 64.791667vw; */
-    }
-}
-
-@media (max-width: 1289px) {
-    /* .logo__text span:last-of-type {
-        font-size: 2rem;
-        display: none;
-    } */
-
     .header__container {
-        padding-right: 24px;
-        padding-left: 24px;
-    }
-}
-
-@media (max-width: 1023px) {
-    .logo__text span:last-of-type {
-        font-size: 2rem;
-        display: none;
+        padding-right: 0;
+        padding-left: 0;
+        max-width: calc(63.22916667vw + 250px); /*1214px*/
     }
 
-}
-
-/* /* @media (max-width: 1254px) {
     .welcome {
-        max-width: 854px;
+        max-width: calc(63.22916667vw + 250px)
     }
 
-    .container {
-        max-width: 884px;
+    /* .welcome {
+        width: 63.229167vw; 
+        text-align: center;
+        padding-right: 6vw;
+        padding-left: 6vw;
+    } */
+}
+
+/* @media (max-width: 1480px) {
+    .header__container {
+        max-width: 80vw;
+    }
+
+    .welcome {
+        max-width: 80vw
     }
 } */
 
-@media (max-width: 680px) {
-    .logo__text {
-        font-size: 31px;
-    }
-
+@media (max-width: 1200px) {
     .logo__text span:last-of-type {
-        display: inline-block;
-        font-size: 31px;
+        display: none;
     }
 
-    .container {
-        max-width: 630px;
+    .logo__img {
+        margin-right: 22px;
+        width: 90%;
+        height: auto;
+    }
+
+    .logo__text {
+        font-size: 35px;
+    }
+
+    .header__menu-btn {
+        padding-top: 22px;
+        padding-bottom: 22px;
+    }
+} 
+
+@media (max-width: 768px) {
+    .logo__text {
+        font-size: 33px;
     }
 
     .header__container {
@@ -69,23 +66,24 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: calc(85vw);
     }
 
     .logo {
         width: 100%;
-        padding: 8px 0 15px 0;
-        justify-content: space-between;
+        padding: 8px 0 20px 0;
+        justify-content: center;
     }
 
-    /* .logo__text {
-        font-size: 1.5em;
-    } */
+    .logo__text {
+        font-size: 40px;
+    }
 
     .logo__img {
         display: flex;
-        margin-right: 40px;
-        width: 100%;
-        height: auto;
+        margin-right: 22px;
+        width: 85px;
+        height: 85px;
     }
 
     .header__nav {
@@ -110,7 +108,7 @@
     }
 
     .welcome {
-        max-width: 584px;
+        max-width: calc(85vw);
     }
 
     .welcome__question {

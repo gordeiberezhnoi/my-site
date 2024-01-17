@@ -26,13 +26,13 @@ body * {
     padding-top: 22px;
     min-height: 1200px;
     padding-bottom: 60px;
-    padding: 22px 24px 60px 24px;
+    padding: 22px 0px 60px 0px;
     margin: 0 auto;
 }
 
 .welcome {
     margin: 0 auto;
-    max-width: 1244px; /*1244px*/
+    max-width: 1214px; /*1244px*/
     min-height: 1146px;
     padding: 10px 172px 75px 172px;
 

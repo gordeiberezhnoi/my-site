@@ -26,7 +26,7 @@ body * {
 } */
 
 .container {
-    max-width: 79.625em; /*1244px*/
+    max-width: 1244px; /*79.625em*/
     margin: 0 auto;
     padding: 0 15px;
 }
