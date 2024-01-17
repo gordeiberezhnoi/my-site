@@ -7,6 +7,10 @@
     /* .main-geometry {
         text-align: center;
     } */
+    .logo__text span:last-of-type {
+        display: none;
+    }
+
     .header__container {
         padding-right: 0;
         padding-left: 0;
@@ -17,6 +21,10 @@
         max-width: calc(63.22916667vw + 250px)
     }
 
+    .logo__img {
+        margin-right: 12px;
+    }
+
     /* .welcome {
         width: 63.229167vw; 
         text-align: center;
@@ -25,44 +33,57 @@
     } */
 }
 
-/* @media (max-width: 1480px) {
-    .header__container {
-        max-width: 80vw;
-    }
+@media (max-width: 1440px) {
 
     .welcome {
-        max-width: 80vw
+        padding-left: 100px;
+        padding-right: 100px;
     }
-} */
 
-@media (max-width: 1200px) {
+    /* .logo__text {
+        font-size: 32px;
+    } */
+
+    /* .header__menu-btn {
+        padding-top: 22px;
+        padding-bottom: 22px;
+    } */
+} 
+
+@media (max-width: 1023px) {
+    .header__container {
+        min-height: 110px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        padding-bottom: 25px;
+    }
+
     .logo__text span:last-of-type {
-        display: none;
+        display: inline-block;
     }
 
-    .logo__img {
-        margin-right: 22px;
-        width: 90%;
-        height: auto;
+    .header__nav {
+        width: 100%;
+        justify-content: center;
     }
 
-    .logo__text {
-        font-size: 35px;
+    .header__menu {
+        width: inherit;
     }
 
     .header__menu-btn {
-        padding-top: 22px;
-        padding-bottom: 22px;
+        padding: 22px 30px;
+        font-size: 2.1vw;
     }
-} 
+}
 
 @media (max-width: 768px) {
-    .logo__text {
-        font-size: 33px;
-    }
-
     .header__container {
-        min-height: 110px; 
+        min-height: 10vw; 
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -71,19 +92,19 @@
 
     .logo {
         width: 100%;
-        padding: 8px 0 20px 0;
+        padding: 8px 0px 10px 0px;
         justify-content: center;
     }
 
     .logo__text {
-        font-size: 40px;
+        font-size: 4.5vw;
     }
 
     .logo__img {
         display: flex;
-        margin-right: 22px;
-        width: 85px;
-        height: 85px;
+        margin-right: 10px;
+        width: 8vw;
+        height: 9vw;
     }
 
     .header__nav {
@@ -97,14 +118,9 @@
 
     .header__menu-btn {
         margin-right: 0;
-        font-size: 1.5em;
-        padding: 21px 34px;
+        padding: 1.5vw 3vw;
         width: auto;
         height: auto;
-    }
-
-    .header__menu-btn--red {
-        margin-right: 0;
     }
 
     .welcome {

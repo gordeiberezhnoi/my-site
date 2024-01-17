@@ -57,7 +57,7 @@ body * {
 .welcome__question {
     position: relative;
     color: #FFF;
-    font-size: clamp(40px, 3.59375vw, 70px); /*70px*/
+    font-size: clamp(40px, 4vw, 70px); /*70px*/
     font-style: normal;
     font-weight: 600;
     line-height: normal;
